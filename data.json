@@ -1,0 +1,142 @@
+[
+    {
+        "id": 1,
+        "first": "John",
+        "last": "Doe",
+        "number": "555-1234",
+        "email": "john.doe@example.com"
+    },
+    {
+        "id": 2,
+        "first": "Jane",
+        "last": "Smith",
+        "number": "555-5678",
+        "email": "jane.smith@example.com"
+    },
+    {
+        "id": 3,
+        "first": "Jim",
+        "last": "Brown",
+        "number": "555-8765",
+        "email": "jim.brown@example.com"
+    },
+    {
+        "id": 4,
+        "first": "Jake",
+        "last": "White",
+        "number": "555-4321",
+        "email": "jake.white@example.com"
+    },
+    {
+        "id": 5,
+        "first": "Jill",
+        "last": "Green",
+        "number": "555-3456",
+        "email": "jill.green@example.com"
+    },
+    {
+        "id": 6,
+        "first": "Jerry",
+        "last": "Black",
+        "number": "555-6543",
+        "email": "jerry.black@example.com"
+    },
+    {
+        "id": 7,
+        "first": "Jessica",
+        "last": "Blue",
+        "number": "555-7890",
+        "email": "jessica.blue@example.com"
+    },
+    {
+        "id": 8,
+        "first": "Jack",
+        "last": "Yellow",
+        "number": "555-0987",
+        "email": "jack.yellow@example.com"
+    },
+    {
+        "id": 9,
+        "first": "Julia",
+        "last": "Purple",
+        "number": "555-2345",
+        "email": "julia.purple@example.com"
+    },
+    {
+        "id": 10,
+        "first": "Toussaint",
+        "last": "Louverture",
+        "number": "555-3452",
+        "email": "toussaint.louverture@hero.ht"
+    },
+    {
+        "id": 11,
+        "first": "Jean-Jacques",
+        "last": "Dessalines",
+        "number": "1111111111",
+        "email": "dessalines@hero.ht"
+    },
+    {
+        "id": 12,
+        "first": "Alexandre",
+        "last": "Petion",
+        "number": "1231-2312",
+        "email": "jjdessalines@hero.ht"
+    },
+    {
+        "id": 13,
+        "first": "Serda",
+        "last": "Simus",
+        "number": "8888-8888",
+        "email": "ser@da.com"
+    },
+    {
+        "id": 14,
+        "first": "Kobe",
+        "last": "Bryant",
+        "number": "8189-8191",
+        "email": "kobe@kb24.com"
+    },
+    {
+        "id": 15,
+        "first": "Michael",
+        "last": "Jordan",
+        "number": "2323-2323",
+        "email": "mj@mj23.com"
+    },
+    {
+        "id": 16,
+        "first": "lebron",
+        "last": "james",
+        "number": "2323-0606",
+        "email": "lebron@lj23.com"
+    },
+    {
+        "id": 17,
+        "first": "gilbert",
+        "last": "arenas",
+        "number": "0000-0000",
+        "email": "agent0@gilarena.com"
+    },
+    {
+        "id": 18,
+        "first": "Chris",
+        "last": "Maulin",
+        "number": "1234-1234",
+        "email": "chris@cmaulin.com"
+    },
+    {
+        "id": 19,
+        "first": "Paul",
+        "last": "Pierce",
+        "number": "1234-5678",
+        "email": "paul.pierce@thepaulpierce.com"
+    },
+    {
+        "id": 20,
+        "first": "Yolette",
+        "last": "Gerbier",
+        "number": "1234-1238",
+        "email": "ygerbier@gerbier.com"
+    }
+]

@@ -1,0 +1,14 @@
+data = [
+    {"id": 1, "first": "John", "last": "Doe", "number": "555-1234", "email": "john.doe@example.com"},
+    {"id": 2, "first": "Jane", "last": "Smith", "number": "555-5678", "email": "jane.smith@example.com"},
+    {"id": 3, "first": "Jim", "last": "Brown", "number": "555-8765", "email": "jim.brown@example.com"},
+    {"id": 4, "first": "Jake", "last": "White", "number": "555-4321", "email": "jake.white@example.com"},
+    {"id": 5, "first": "Jill", "last": "Green", "number": "555-3456", "email": "jill.green@example.com"},
+    {"id": 6, "first": "Jerry", "last": "Black", "number": "555-6543", "email": "jerry.black@example.com"},
+    {"id": 7, "first": "Jessica", "last": "Blue", "number": "555-7890", "email": "jessica.blue@example.com"},
+    {"id": 8, "first": "Jack", "last": "Yellow", "number": "555-0987", "email": "jack.yellow@example.com"},
+    {"id": 9, "first": "Julia", "last": "Purple", "number": "555-2345", "email": "julia.purple@example.com"},
+    {"id": 10, "first": "Jordan", "last": "Red", "number": "555-3452", "email": "jordan.red@example.com"}
+]
+
+print(data)

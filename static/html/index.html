@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Python on the Backend with Hussein Nasser</title>
+    <style>
+      /* Reset default styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* General styles */
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        background-color: #f4f4f4;
+        color: #333;
+        padding: 20px;
+      }
+
+      /* Header styles */
+      header {
+        background: #333;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      /* Navigation styles */
+      nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+      }
+
+      nav ul li {
+        margin: 0 15px;
+      }
+
+      nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.2em;
+      }
+
+      /* Main content styles */
+      main {
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      section {
+        margin-bottom: 20px;
+      }
+
+      section header h1 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+      }
+
+      section div p {
+        margin-bottom: 10px;
+      }
+
+      /* Form styles */
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      form label {
+        display: flex;
+        flex-direction: column;
+        font-weight: bold;
+      }
+
+      form input {
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+
+      form button {
+        padding: 10px;
+        background: #009879;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 1em;
+      }
+
+      form button:hover {
+        background: #007a63;
+      }
+
+      /* Table styles */
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        font-size: 1em;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+      }
+
+      thead tr {
+        background-color: #009879;
+        color: #ffffff;
+        text-align: left;
+        font-weight: bold;
+      }
+
+      thead th {
+        padding: 12px 15px;
+      }
+
+      tbody tr {
+        border-bottom: 1px solid #dddddd;
+      }
+
+      tbody tr:nth-of-type(even) {
+        background-color: #f3f3f3;
+      }
+
+      tbody tr:last-of-type {
+        border-bottom: 2px solid #009879;
+      }
+
+      tbody td {
+        padding: 12px 15px;
+      }
+
+      /* Footer styles */
+      footer {
+        text-align: center;
+        padding: 20px 0;
+        background: #333;
+        color: #fff;
+        margin-top: 20px;
+      }
+
+      /* Responsive design */
+      @media (max-width: 600px) {
+        nav ul {
+          flex-direction: column;
+        }
+
+        table,
+        thead,
+        tbody,
+        th,
+        td,
+        tr {
+          display: block;
+        }
+
+        thead tr {
+          display: none;
+        }
+
+        tr {
+          margin-bottom: 15px;
+        }
+
+        td {
+          text-align: right;
+          padding-left: 50%;
+          position: relative;
+        }
+
+        td::before {
+          content: attr(data-label);
+          position: absolute;
+          left: 0;
+          width: 50%;
+          padding-left: 15px;
+          font-weight: bold;
+          text-align: left;
+        }
+      }
+
+      /* Basic table styles */
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        font-size: 1em;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+      }
+
+      /* Table header styles */
+      thead tr {
+        background-color: #009879;
+        color: #ffffff;
+        text-align: left;
+        font-weight: bold;
+      }
+
+      thead th {
+        padding: 12px 15px;
+      }
+
+      /* Table body styles */
+      tbody tr {
+        border-bottom: 1px solid #dddddd;
+      }
+
+      tbody tr:nth-of-type(even) {
+        background-color: #f3f3f3;
+      }
+
+      tbody tr:last-of-type {
+        border-bottom: 2px solid #009879;
+      }
+
+      tbody td {
+        padding: 12px 15px;
+      }
+
+      /* Responsive design */
+      @media (max-width: 600px) {
+        table,
+        thead,
+        tbody,
+        th,
+        td,
+        tr {
+          display: block;
+        }
+
+        thead tr {
+          display: none;
+        }
+
+        tr {
+          margin-bottom: 15px;
+        }
+
+        td {
+          text-align: right;
+          padding-left: 50%;
+          position: relative;
+        }
+
+        td::before {
+          content: attr(data-label);
+          position: absolute;
+          left: 0;
+          width: 50%;
+          padding-left: 15px;
+          font-weight: bold;
+          text-align: left;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>Black</li>
+          <li>Green</li>
+          <li>Red</li>
+          <li>Blue</li>
+          <li>White</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <header>
+          <h1>Section 1</h1>
+        </header>
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam fuga
+            voluptates inventore iusto magni neque quos nemo possimus placeat,
+            vero ratione quia autem quod! Et molestiae cum dicta iusto
+            aspernatur!
+          </p>
+        </div>
+      </section>
+      <section>
+        <header>
+          <h1>Contact Section</h1>
+        </header>
+        <form action="/v1/data" method="POST">
+          <h3>Add a new contact to your contact list:</h3>
+          <label>
+            first:
+            <input type="text" name="first" />
+          </label>
+          <label>
+            last:
+            <input type="text" name="last" />
+          </label>
+          <label>
+            number:
+            <input type="text" name="number" />
+          </label>
+          <label>
+            email:
+            <input type="text" name="email" />
+          </label>
+          <button type="submit">Submit</button>
+        </form>
+        <br />
+        <hr />
+        <table>
+          <h3>Contacts List:</h3>
+          <thead>
+            <tr>
+              <th>id</th>
+              <th>first</th>
+              <th>last</th>
+              <th>number</th>
+              <th>email</th>
+            </tr>
+          </thead>
+          <tbody id="table-body"></tbody>
+        </table>
+      </section>
+    </main>
+    <footer>
+      <p>No Copyright &copy 2024.</p>
+    </footer>
+    <script>
+      url = "/v1/data";
+      fetch(url)
+        .then((response) => response.json())
+        .then((response) => {
+          const tbody = document.getElementById("table-body");
+          for (elem of response) {
+            const tableRow = document.createElement("tr");
+            Object.entries(elem).forEach((item) => {
+              const tableData = document.createElement("td");
+              const [key, val] = item;
+              tableData.setAttribute("data-label", key);
+              tableData.textContent = val;
+              tableRow.appendChild(tableData);
+            });
+            tbody.appendChild(tableRow);
+          }
+        });
+    </script>
+  </body>
+</html>
