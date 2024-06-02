@@ -30,6 +30,39 @@ class DatabaseHandler(tornado.web.RequestHandler):
                 print("Some Error Occurred!")
                 print(err)
         self.render('./static/html/index.html')
+        
+    def put(self):
+        try:
+            with open("./data.json") as df:
+                db = json.load(df)
+            for item in db:
+                if item["id"] == int(self.get_argument("id")):
+                    item["first"] = self.get_argument("first")
+                    item["last"] = self.get_argument("last")
+                    item["number"] = self.get_argument( "number")
+                    item["email"] = self.get_argument("email")
+
+            with open("./data.json", "w") as df:
+                json.dump(db, df)
+                self.write({"message": "Updated Successfully!"})
+
+        except Exception as err:
+            self.write({"message": f"Error description: {err}"})
+
+    def delete(self):
+        new_db = []
+        with open("./data.json") as df:
+            db = json.load(df)
+            try:
+                for item in db:
+                    if item["id"] != int(self.get_argument("id")):
+                        new_db.append(item)
+            except Exception as err:
+                self.write({"message": f"Delete Failed! {err}"})
+        with open("./data.json", "w") as df:
+            json.dump(new_db, df)
+            self.write({"message": "Deleted Successfully!"})
+
 
 class SearchResultsHandler(tornado.web.RequestHandler):
     def get(self):
