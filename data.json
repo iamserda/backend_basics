@@ -1,19 +1,5 @@
 [
     {
-        "id": 1,
-        "first": "John",
-        "last": "Doe",
-        "number": "555-1234",
-        "email": "john.doe@example.com"
-    },
-    {
-        "id": 2,
-        "first": "Jane",
-        "last": "Smith",
-        "number": "555-5678",
-        "email": "jane.smith@example.com"
-    },
-    {
         "id": 3,
         "first": "Jim",
         "last": "Brown",
@@ -57,10 +43,10 @@
     },
     {
         "id": 9,
-        "first": "Julia",
-        "last": "Purple",
-        "number": "555-2345",
-        "email": "julia.purple@example.com"
+        "first": "Jorah",
+        "last": "Mormont",
+        "number": "9021-0902",
+        "email": "jmormont@asoi.af"
     },
     {
         "id": 10,
@@ -106,15 +92,15 @@
     },
     {
         "id": 16,
-        "first": "lebron",
-        "last": "james",
+        "first": "LeBron",
+        "last": "James",
         "number": "2323-0606",
         "email": "lebron@lj23.com"
     },
     {
         "id": 17,
-        "first": "gilbert",
-        "last": "arenas",
+        "first": "Gilbert",
+        "last": "Arenas",
         "number": "0000-0000",
         "email": "agent0@gilarena.com"
     },
@@ -138,5 +124,26 @@
         "last": "Gerbier",
         "number": "1234-1238",
         "email": "ygerbier@gerbier.com"
+    },
+    {
+        "id": 21,
+        "first": "Hussein",
+        "last": "Nasser",
+        "number": "8080-8191",
+        "email": "hnsr@nasser.com"
+    },
+    {
+        "id": 22,
+        "first": "Jordana",
+        "last": "Artificial",
+        "number": "9021-0000",
+        "email": "jordanai@mormont.ai"
+    },
+    {
+        "id": 21,
+        "first": "Roland",
+        "last": "Lastener",
+        "number": "9179009000",
+        "email": "roland.lastener@gmail.com"
     }
 ]
